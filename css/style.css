@@ -1,0 +1,150 @@
+/* Imported CSS */
+@import "https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900";
+/* End Imported CSS*/
+
+
+/* Default CSS */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.7;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: medium none
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+a:focus,
+a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+}
+/* End Default CSS */
+
+
+
+/* Nav CSS */
+.navbar {
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #fff;
+	z-index: 1030;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.2);
+}
+.navbar img {
+	height: 35px;
+  width: auto;
+  margin-top: 11px;
+}
+.navbar ul li {
+	padding-right: 14px;
+}
+.navbar li a {
+	color: #444;
+	text-transform: uppercase;
+	font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover {
+  transition: 0.5s;
+}
+#navbar .active {
+  position: relative;
+}
+.navbar-medisancis ul ul {
+  position: absolute;
+  min-width: 150px;
+  background: #fff;
+  border-radius: 2px;
+  display: none;
+  border: 1px solid #eaeaea;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-medisancis ul ul li {
+  display: block;
+  background: #fff;
+}
+.navbar-medisancis ul ul li a {
+  font-size: 11px;
+  padding-left: 10px;
+}
+.navbar-medisancis ul li:hover ul {
+  display: block;
+}
+.navbar-medisancis .dropdown-toggle::after {
+  display: none;
+}
+.navbar-medisancis .navbar-brand {
+  padding-top: 0rem;
+} 
+/* End Nav CSS */
+
+
+
+
+
+@media(max-width: 767px) {
+  .navbar-medisancis ul ul {
+      position: relative;
+  }
+  .navbar-medisancis i.fa.fa-angle-down {
+      float: right;
+  }
+  .navbar li a {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .navbar ul li {
+    border-bottom: 1px solid #eaeaea;
+  }
+  .navbar ul li ul li {
+    border-bottom: none;
+  }
+}
